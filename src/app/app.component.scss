@@ -1,0 +1,20 @@
+.memes {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 1rem;
+}
+
+.memes h2 {
+  font-size: 1.5rem;
+}
+
+.memes li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 1.5rem 1.5rem;
+}
+
+.memes img {
+  width: 100%;
+}

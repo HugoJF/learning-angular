@@ -1,10 +1,23 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {BackendService, Meme} from "./backend.service";
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'ng-playground';
+  memes: Meme[] = [];
+
+  constructor(private backend: BackendService) {
+    //
+  }
+
+  ngOnInit(): void {
+    this.backend.memes().subscribe(value => (
+      this.memes = value.data.memes
+    ))
+  }
+
 }
