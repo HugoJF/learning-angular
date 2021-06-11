@@ -2,21 +2,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 
-:root {
-  --gray-100: #eee;
-  --gray-600: #444;
-  --gray-900: #111;
-}
+/* ./your-css-folder/styles.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-body {
-  background-color: var(--gray-900);
-}
 
-a,h1,h2,h3,h4,h5,h6 {
-  font-family: 'Montserrat', sans-serif;
-  color: var(--gray-100);
-}
-
-ul {
-  list-style: none;
-}

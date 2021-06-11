@@ -5,10 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {FormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
+import { TestComponent } from './sub/test/test.component';
+import { TodosComponent } from './todo/todos/todos.component';
+import { TodoComponent } from './todo/todo/todo.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TestComponent,
+    TodosComponent,
+    TodoComponent
   ],
   imports: [
     HttpClientModule,

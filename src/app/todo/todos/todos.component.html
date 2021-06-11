@@ -1,0 +1,37 @@
+<div class="container mx-auto space-y-4">
+  <h1 class="text-5xl text-white text-center font-black">TODO</h1>
+
+  <!-- List -->
+  <div
+    *ngFor="let todo of getTodos()"
+    (click)="toggleTodo(todo.id)"
+    class="flex items-center py-2 px-4 text-gray-100 bg-gray-800 border border-gray-700 rounded cursor-pointer shadow"
+  >
+    <div
+      [ngClass]="{'line-through opacity-25 ': todo.done}"
+      class="duration-150 select-none"
+    >
+      <h2 class="text-2xl font-bold">{{ todo.title }}</h2>
+      <p class="text-gray-300 text-sm">{{ todo.description }}</p>
+    </div>
+  </div>
+
+  <!-- Form -->
+  <div class="flex pt-8 space-x-2">
+    <div class="flex flex-col flex-grow space-y-4">
+      <!-- Title -->
+      <input
+        placeholder="Título do teu TODO"
+        class="px-4 py-2 w-full text-white bg-gray-800 rounded"
+        type="text"
+      >
+
+      <!-- Description -->
+      <textarea
+        placeholder="Descrição do TODO"
+        class="px-4 py-2 w-full text-white bg-gray-800 rounded resize-none"
+      ></textarea>
+    </div>
+    <button class="duration-150 px-4 bg-gray-600 hover:bg-gray-500 text-white font-medium rounded">Adicionar</button>
+  </div>
+</div>
