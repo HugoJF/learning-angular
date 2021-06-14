@@ -1,20 +1,22 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import {AppRoutingModule} from './app-routing.module';
+import {AppComponent} from './app.component';
 import {FormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
-import { TestComponent } from './sub/test/test.component';
-import { TodosComponent } from './todo/todos/todos.component';
-import { TodoComponent } from './todo/todo/todo.component';
+import {TodosComponent} from './todo/todos/todos.component';
+import {TodoComponent} from './todo/todo/todo.component';
+import {MemesComponent} from './memes/memes/memes.component';
+import { ClassToggleComponent } from './ui/class-toggle/class-toggle.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TestComponent,
     TodosComponent,
-    TodoComponent
+    TodoComponent,
+    MemesComponent,
+    ClassToggleComponent
   ],
   imports: [
     HttpClientModule,
@@ -25,4 +27,5 @@ import { TodoComponent } from './todo/todo/todo.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

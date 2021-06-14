@@ -1,17 +1,36 @@
-<!--<ul class="memes">-->
-<!--  <li *ngFor="let meme of memes">-->
-<!--    <h2>{{meme.name}}</h2>-->
-<!--    <img [src]="meme.url" [alt]="meme.name">-->
-<!--  </li>-->
-<!--</ul>-->
-
 <div class="container mx-auto flex items-center mb-8 space-x-4">
   <a routerLink="/" class="text-3xl font-black">NG2</a>
   <ul class="flex items-center space-x-5 text-lg">
-    <li routerLink="/" class="duration-150 px-6 py-3 bg-gray-800 hover:bg-gray-700 cursor-pointer">Home</li>
-    <li routerLink="/memes" class="duration-150 px-6 py-3 bg-gray-800 hover:bg-gray-700 cursor-pointer">Memes</li>
-    <li routerLink="/todos" class="duration-150 px-6 py-3 bg-gray-800 hover:bg-gray-700 cursor-pointer">Todos</li>
+    <li
+      routerLink="/"
+      class="duration-150 px-6 py-3 bg-gray-800 hover:bg-gray-700 cursor-pointer"
+    >
+      Home
+    </li>
+    <li
+      routerLink="/memes"
+      routerLinkActive="bg-gray-700 hover:bg-gray-600"
+      class="duration-150 px-6 py-3 bg-gray-800 hover:bg-gray-700 cursor-pointer"
+    >
+      Memes
+    </li>
+    <li
+      routerLink="/todos"
+      routerLinkActive="bg-gray-700 hover:bg-gray-600"
+      class="duration-150 px-6 py-3 bg-gray-800 hover:bg-gray-700 cursor-pointer"
+    >
+      Todos
+    </li>
+    <li
+      routerLink="/ui/class-toggle"
+      routerLinkActive="bg-gray-700 hover:bg-gray-600"
+      class="duration-150 px-6 py-3 bg-gray-800 hover:bg-gray-700 cursor-pointer"
+    >
+      Class Toggle
+    </li>
   </ul>
 </div>
 
-<router-outlet></router-outlet>
+<div class="container mx-auto flex flex-col items-center">
+  <router-outlet></router-outlet>
+</div>
