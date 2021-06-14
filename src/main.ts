@@ -10,3 +10,15 @@ if (environment.production) {
 
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.error(err));
+
+/*
+  TODO:
+    * remove css
+    * add header
+    * add form validation
+    * add todo logic (add, remove, toggle)
+    * extract components
+    * cleanup
+
+
+ */
