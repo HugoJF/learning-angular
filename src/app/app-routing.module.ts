@@ -5,6 +5,7 @@ import {MemesComponent} from "./memes/memes/memes.component";
 import {AppComponent} from "./app.component";
 import {ClassToggleComponent} from "./ui/class-toggle/class-toggle.component";
 import {GenericsComponent} from "./dependency-injection/generics/generics.component";
+import {EventsComponent} from "./events/events/events.component";
 
 const routes: Routes = [
   {
@@ -17,6 +18,8 @@ const routes: Routes = [
     path: 'ui/class-toggle', component: ClassToggleComponent,
   }, {
     path: 'di/generics', component: GenericsComponent,
+  }, {
+    path: 'events', component: EventsComponent,
   }
 ];
 

@@ -1,0 +1,10 @@
+<div class="grid grid-cols-2 gap-8">
+  <app-event
+    [event]="event"
+    *ngFor="let event of events"
+  ></app-event>
+</div>
+
+<div class="flex justify-center">
+  <app-pagination></app-pagination>
+</div>

@@ -1,0 +1,13 @@
+<div class="flex">
+  <div
+    *ngFor="let page of pages()"
+    (click)="goTo(page)"
+    [ngClass]="{
+        'bg-blue-500': page === current,
+        'duration-150 hover:bg-blue-900 cursor-pointer': page !== current
+      }"
+    class="px-5 py-3 bg-gray-800 first:rounded-l-lg last:rounded-r-lg select-none"
+  >
+    {{page}}
+  </div>
+</div>

@@ -13,6 +13,12 @@ import {OneComponent} from './dependency-injection/one/one.component';
 import {EvenComponent} from './dependency-injection/even/even.component';
 import {LayoutComponent} from './dependency-injection/layout/layout.component';
 import {GenericsComponent} from "./dependency-injection/generics/generics.component";
+import { EventsComponent } from './events/events/events.component';
+import { PaginationComponent } from './shared/pagination/pagination.component';
+import { EventComponent } from './events/event/event.component';
+import {IconsModule} from "./icons/icons.module";
+import { BadgeComponent } from './shared/badge/badge.component';
+import { HeadComponent } from './shared/head/head.component';
 
 @NgModule({
   declarations: [
@@ -24,13 +30,19 @@ import {GenericsComponent} from "./dependency-injection/generics/generics.compon
     GenericsComponent,
     OneComponent,
     EvenComponent,
-    LayoutComponent
+    LayoutComponent,
+    EventsComponent,
+    PaginationComponent,
+    EventComponent,
+    BadgeComponent,
+    HeadComponent
   ],
   imports: [
     HttpClientModule,
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    IconsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
