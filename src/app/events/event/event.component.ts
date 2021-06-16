@@ -32,6 +32,18 @@ export class EventComponent implements OnInit, OnChanges {
 
   }
 
+  handleOnLeave() {
+
+  }
+
+  handleOnJoin() {
+
+  }
+
+  userInEvent() {
+    return true;
+  }
+
   parseDates() {
     this.startsAt = new Date(this.event.starts_at);
     this.endsAt = new Date(this.event.ends_at);

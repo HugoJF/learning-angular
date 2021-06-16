@@ -19,24 +19,37 @@ import { EventComponent } from './events/event/event.component';
 import {IconsModule} from "./icons/icons.module";
 import { BadgeComponent } from './shared/badge/badge.component';
 import { HeadComponent } from './shared/head/head.component';
+import { ButtonComponent } from './shared/button/button.component';
+import { LoginComponent } from './events/login/login.component';
+import { InputComponent } from './shared/input/input.component';
+import { ContainerComponent } from './shared/container/container.component';
+import { FieldComponent } from './shared/field/field.component';
+import { TitleComponent } from './shared/title/title.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    TodosComponent,
-    TodoComponent,
-    MemesComponent,
-    ClassToggleComponent,
-    GenericsComponent,
-    OneComponent,
-    EvenComponent,
-    LayoutComponent,
-    EventsComponent,
-    PaginationComponent,
-    EventComponent,
-    BadgeComponent,
-    HeadComponent
-  ],
+    declarations: [
+        AppComponent,
+        TodosComponent,
+        TodoComponent,
+        MemesComponent,
+        ClassToggleComponent,
+        GenericsComponent,
+        OneComponent,
+        EvenComponent,
+        LayoutComponent,
+        EventsComponent,
+        PaginationComponent,
+        EventComponent,
+        BadgeComponent,
+        HeadComponent,
+        ButtonComponent,
+        LoginComponent,
+        InputComponent,
+        ContainerComponent,
+        FieldComponent,
+        FieldComponent,
+        TitleComponent
+    ],
   imports: [
     HttpClientModule,
     BrowserModule,

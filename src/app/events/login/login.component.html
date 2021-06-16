@@ -1,0 +1,37 @@
+<form class="w-full" (submit)="handleSubmit()">
+  <app-title [type]="0" class="mb-10">
+    EventLab
+  </app-title>
+  <div class="space-y-8">
+    <div>
+      <app-input
+        name="email"
+        label="Email"
+        [error]="errors?.email"
+        type="text"
+      ></app-input>
+    </div>
+
+    <div>
+      <app-input
+        name="password"
+        label="Senha"
+        type="password"
+        [error]="errors?.password"
+      ></app-input>
+    </div>
+
+    <div class="pt-4">
+      <app-button class="w-full" [loading]="loading">
+        Entrar
+      </app-button>
+    </div>
+
+    <div class="mt-8 px-4 text-center">
+      <a [routerLink]="'/register'" class="w-full text-gray-500">
+        <span>Ainda não possui uma conta?</span>
+        <span class="ml-1 text-blue-500 hover:underline">Registre-se aqui</span>
+      </a>
+    </div>
+  </div>
+</form>

@@ -1,0 +1,17 @@
+<app-field [name]="name" [label]="label" [error]="error">
+  <input
+    [id]="name"
+    [name]="name"
+    [disabled]="disabled"
+    [ngClass]="{
+      'transition-colors duration-500': true,
+      'block w-full py-3 px-5 placeholder-gray-400 text-gray-700': true,
+      'focus:outline-none focus:ring focus:shadow-sm': true,
+      'border border-lg rounded-lg': true,
+      'ring-red-200 border-red-500': error,
+      'ring-blue-200 focus:border-blue-500': !error,
+      'bg-gray-200 text-gray-500 rounded': disabled,
+      'bg-white text-black': !disabled
+    }"
+  />
+</app-field>

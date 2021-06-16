@@ -1,0 +1,16 @@
+<label
+  [for]="name"
+  [ngClass]="{
+    'pb-2': true,
+    'text-red-500': error,
+    'text-gray-600': !error
+  }"
+>
+  {{label}}
+</label>
+
+<ng-content></ng-content>
+
+<p *ngIf="error" class="text-sm text-red-500 font-medium tracking-tight">
+  {{error.message}}
+</p>
