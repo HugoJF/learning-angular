@@ -3,6 +3,7 @@ import {Component, OnInit} from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
+  host: {class: 'contents'}
 })
 export class AppComponent implements OnInit {
   title = 'ng-playground';
