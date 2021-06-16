@@ -13,7 +13,8 @@ export class AppComponent implements OnInit {
     {link: '/todos', active: true, title: 'Todos'},
     {link: '/ui/class-toggle', active: true, title: 'Class Toggle'},
     {link: '/di/generics', active: true, title: 'Tokens'},
-    {link: '/events', active: true, title: 'Events'}
+    {link: '/events', active: true, title: 'Events'},
+    {link: '/display-contents', active: true, title: 'display: contents'}
   ];
 
   constructor() {

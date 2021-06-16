@@ -7,6 +7,7 @@ import {ClassToggleComponent} from "./ui/class-toggle/class-toggle.component";
 import {GenericsComponent} from "./dependency-injection/generics/generics.component";
 import {EventsComponent} from "./events/events/events.component";
 import {LoginComponent} from "./events/login/login.component";
+import {DemoComponent} from "./display-contents/demo/demo.component";
 
 const routes: Routes = [
   {
@@ -23,6 +24,8 @@ const routes: Routes = [
     path: 'events', component: EventsComponent,
   }, {
     path: 'events/login', component: LoginComponent,
+  }, {
+    path: 'display-contents', component: DemoComponent,
   }
 ];
 

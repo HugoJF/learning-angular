@@ -13,43 +13,49 @@ import {OneComponent} from './dependency-injection/one/one.component';
 import {EvenComponent} from './dependency-injection/even/even.component';
 import {LayoutComponent} from './dependency-injection/layout/layout.component';
 import {GenericsComponent} from "./dependency-injection/generics/generics.component";
-import { EventsComponent } from './events/events/events.component';
-import { PaginationComponent } from './shared/pagination/pagination.component';
-import { EventComponent } from './events/event/event.component';
+import {EventsComponent} from './events/events/events.component';
+import {PaginationComponent} from './shared/pagination/pagination.component';
+import {EventComponent} from './events/event/event.component';
 import {IconsModule} from "./icons/icons.module";
-import { BadgeComponent } from './shared/badge/badge.component';
-import { HeadComponent } from './shared/head/head.component';
-import { ButtonComponent } from './shared/button/button.component';
-import { LoginComponent } from './events/login/login.component';
-import { InputComponent } from './shared/input/input.component';
-import { ContainerComponent } from './shared/container/container.component';
-import { FieldComponent } from './shared/field/field.component';
-import { TitleComponent } from './shared/title/title.component';
+import {BadgeComponent} from './shared/badge/badge.component';
+import {HeadComponent} from './shared/head/head.component';
+import {ButtonComponent} from './shared/button/button.component';
+import {LoginComponent} from './events/login/login.component';
+import {InputComponent} from './shared/input/input.component';
+import {ContainerComponent} from './shared/container/container.component';
+import {FieldComponent} from './shared/field/field.component';
+import {TitleComponent} from './shared/title/title.component';
+import {DemoComponent} from './display-contents/demo/demo.component';
+import {WithContentsComponent} from './display-contents/with-contents/with-contents.component';
+import {WithoutContentsComponent} from './display-contents/without-contents/without-contents.component';
 
 @NgModule({
-    declarations: [
-        AppComponent,
-        TodosComponent,
-        TodoComponent,
-        MemesComponent,
-        ClassToggleComponent,
-        GenericsComponent,
-        OneComponent,
-        EvenComponent,
-        LayoutComponent,
-        EventsComponent,
-        PaginationComponent,
-        EventComponent,
-        BadgeComponent,
-        HeadComponent,
-        ButtonComponent,
-        LoginComponent,
-        InputComponent,
-        ContainerComponent,
-        FieldComponent,
-        FieldComponent,
-        TitleComponent
-    ],
+  declarations: [
+    AppComponent,
+    TodosComponent,
+    TodoComponent,
+    MemesComponent,
+    ClassToggleComponent,
+    GenericsComponent,
+    OneComponent,
+    EvenComponent,
+    LayoutComponent,
+    EventsComponent,
+    PaginationComponent,
+    EventComponent,
+    BadgeComponent,
+    HeadComponent,
+    ButtonComponent,
+    LoginComponent,
+    InputComponent,
+    ContainerComponent,
+    FieldComponent,
+    FieldComponent,
+    TitleComponent,
+    DemoComponent,
+    WithContentsComponent,
+    WithoutContentsComponent
+  ],
   imports: [
     HttpClientModule,
     BrowserModule,
