@@ -28,6 +28,8 @@ import {TitleComponent} from './shared/title/title.component';
 import {DemoComponent} from './display-contents/demo/demo.component';
 import {WithContentsComponent} from './display-contents/with-contents/with-contents.component';
 import {WithoutContentsComponent} from './display-contents/without-contents/without-contents.component';
+import { ClassSwitchDirective } from './class-switch.directive';
+import { ClassSwitchComponent } from './ui/class-switch/class-switch.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +56,9 @@ import {WithoutContentsComponent} from './display-contents/without-contents/with
     TitleComponent,
     DemoComponent,
     WithContentsComponent,
-    WithoutContentsComponent
+    WithoutContentsComponent,
+    ClassSwitchDirective,
+    ClassSwitchComponent
   ],
   imports: [
     HttpClientModule,

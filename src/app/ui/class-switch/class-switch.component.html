@@ -1,0 +1,14 @@
+<h1
+  (click)="increment()"
+  class="duration-150 mx-auto flex items-center justify-center
+    w-32 h-32 p-5 text-5xl bg-purple-300 hover:bg-purple-400 text-purple-900 font-black
+    border-purple-500 rounded-full cursor-pointer select-none"
+  [appClassSwitch]="counter"
+  [appClassCases]="{
+    '0': 'border-0 shadow',
+    '1': 'border-[0.5rem] shadow-md',
+    '2': 'border-[1rem] shadow-lg'
+  }"
+>
+  {{counter}}
+</h1>
