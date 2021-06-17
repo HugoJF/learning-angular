@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {FormControl, Validators} from "@angular/forms";
 
 @Component({
   selector: 'app-login',
@@ -6,8 +7,16 @@ import {Component, OnInit} from '@angular/core';
   host: {class: 'contents'}
 })
 export class LoginComponent implements OnInit {
-  errors?: { [id: string]: Error };
   loading = false;
+
+  email = new FormControl('', [
+    Validators.required,
+    Validators.minLength(8),
+  ]);
+  password = new FormControl('', [
+    Validators.required,
+    Validators.minLength(8),
+  ]);
 
   constructor() {
   }
@@ -16,6 +25,6 @@ export class LoginComponent implements OnInit {
   }
 
   handleSubmit() {
-
+    console.log(this.password.errors);
   }
 }

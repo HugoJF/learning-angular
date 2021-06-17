@@ -1,9 +1,5 @@
 export type Id = string | number;
 
-export type Error = {
-  message: string;
-}
-
 export type Timestamps = {
   updated_at: string;
   created_at: string;

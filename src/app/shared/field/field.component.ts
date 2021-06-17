@@ -7,9 +7,9 @@ import {Component, Input} from '@angular/core';
 export class FieldComponent {
   @Input() name: string = '';
   @Input() label: string = '';
-
-  @Input() error?: Error;
+  @Input() error?: string;
 
   constructor() {
   }
+
 }

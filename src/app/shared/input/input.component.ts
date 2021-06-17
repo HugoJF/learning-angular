@@ -1,4 +1,5 @@
 import {Component, Input} from '@angular/core';
+import {FormControl} from "@angular/forms";
 
 @Component({
   selector: 'app-input[name][label]',
@@ -6,11 +7,33 @@ import {Component, Input} from '@angular/core';
 })
 export class InputComponent {
   @Input() name!: string;
-  @Input() disabled: boolean = false;
-  @Input() label: string = '';
-  @Input() error?: Error;
+  @Input() label!: string;
   @Input() type: string = '';
 
+  @Input() control!: FormControl;
+
+  hasBlurred = false;
+
   constructor() {
+  }
+
+  canDisplayErrors() {
+    return this.hasBlurred && (this.control.touched || this.control.dirty);
+  }
+
+  getErrorMessage() {
+    if (!this.control.errors || !this.canDisplayErrors()) {
+      return;
+    }
+
+    if (this.control.errors?.required) {
+      return `Campo ${this.name} é obrigatório'!`;
+    }
+
+    if (this.control.errors?.minlength) {
+      return `Campo ${this.name} exige um tamanho mínimo de ${this.control.errors.minlength.requiredLength} caracteres`;
+    }
+
+    return 'Invalid field';
   }
 }
