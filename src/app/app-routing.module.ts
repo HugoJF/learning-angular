@@ -8,6 +8,8 @@ import {GenericsComponent} from "./dependency-injection/generics/generics.compon
 import {EventsComponent} from "./events/events/events.component";
 import {LoginComponent} from "./events/login/login.component";
 import {DemoComponent} from "./display-contents/demo/demo.component";
+import {RegisterComponent} from "./events/register/register.component";
+import {CreateEventComponent} from "./events/create-event/create-event.component";
 
 const routes: Routes = [
   {
@@ -24,6 +26,10 @@ const routes: Routes = [
     path: 'events', component: EventsComponent,
   }, {
     path: 'events/login', component: LoginComponent,
+  }, {
+    path: 'events/create', component: CreateEventComponent,
+  }, {
+    path: 'events/register', component: RegisterComponent,
   }, {
     path: 'display-contents', component: DemoComponent,
   }

@@ -30,6 +30,9 @@ import {WithContentsComponent} from './display-contents/with-contents/with-conte
 import {WithoutContentsComponent} from './display-contents/without-contents/without-contents.component';
 import { ClassSwitchDirective } from './class-switch.directive';
 import { ClassSwitchComponent } from './ui/class-switch/class-switch.component';
+import { RegisterComponent } from './events/register/register.component';
+import { CreateEventComponent } from './events/create-event/create-event.component';
+import {TextareaComponent} from "./shared/textarea/textarea.component";
 
 @NgModule({
   declarations: [
@@ -58,7 +61,10 @@ import { ClassSwitchComponent } from './ui/class-switch/class-switch.component';
     WithContentsComponent,
     WithoutContentsComponent,
     ClassSwitchDirective,
-    ClassSwitchComponent
+    ClassSwitchComponent,
+    RegisterComponent,
+    CreateEventComponent,
+    TextareaComponent
   ],
   imports: [
     HttpClientModule,

@@ -2,13 +2,12 @@ import {Component, Input} from '@angular/core';
 import {FormControl} from "@angular/forms";
 
 @Component({
-  selector: 'app-input[name][label]',
-  templateUrl: './input.component.html',
+  selector: 'app-textarea',
+  templateUrl: './textarea.component.html',
 })
-export class InputComponent {
+export class TextareaComponent {
   @Input() name!: string;
   @Input() label!: string;
-  @Input() type: string = '';
 
   @Input() control!: FormControl;
 

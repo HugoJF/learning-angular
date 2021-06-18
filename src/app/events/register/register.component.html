@@ -5,6 +5,15 @@
 
   <div>
     <app-input
+      name="name"
+      label="Nome"
+      type="text"
+      [control]="name"
+    ></app-input>
+  </div>
+
+  <div>
+    <app-input
       name="email"
       label="Email"
       type="text"
@@ -21,16 +30,25 @@
     ></app-input>
   </div>
 
+  <div>
+    <app-input
+      name="password_confirmation"
+      label="Confirme a sua senha"
+      type="password"
+      [control]="password_confirmation"
+    ></app-input>
+  </div>
+
   <div class="pt-4">
     <app-button class="w-full" [loading]="loading">
-      Entrar
+      Registrar
     </app-button>
   </div>
 
   <div class="mt-8 px-4 text-center">
-    <a [routerLink]="'/events/register'" class="w-full text-gray-500">
-      <span>Ainda não possui uma conta?</span>
-      <span class="ml-1 text-blue-500 hover:underline">Registre-se aqui</span>
+    <a [routerLink]="'/events/login'" class="w-full text-gray-500">
+      <span>Já possui uma conta?</span>
+      <span class="ml-1 text-blue-500 hover:underline">Clique aqui</span>
     </a>
   </div>
 </form>
